@@ -1,0 +1,30 @@
+.title{
+    color: rgb(51, 223, 223);
+    position: relative;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 70px;line-height: 1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 2;
+}
+.image{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 550px;
+    height: 400px;
+    -webkit-mask-image: linear-gradient(
+        rgb(0 0 0 / 1),
+        rgb(0 0 0 / 0.5) 70%,
+        rgb(0 0 0 / 0)
+    );
+    mask-image: linear-gradient(
+        rgb(0 0 0 / 1),
+        rgb(0 0 0 / 0.5) 70%,
+        rgb(0 0 0 / 0)
+    );
+}
+.container3_2{
+
+}

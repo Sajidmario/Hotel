@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: rgb(37, 37, 60);
+    height: 140px;
+}
+
+.upperheader{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items1{
+    flex-grow: 1;
+    flex-basis: 200;
+    position: relative;
+    left: 200px;
+}
+.Currency{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 55px; 
+    height: 40px;
+    padding: 2px;
+    margin: 2px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 680px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+.Currency:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Currency:active
+{
+    opacity: 0.8;
+}
+
+.items2{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Language
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 55px; 
+    height: 40px; 
+    padding: 2px;
+    margin: 2px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 590px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+.Language:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Language:active
+{
+    opacity: 0.8;
+}
+
+.items3{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Register
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    color: rgb(37, 37, 60);
+    width: 95px; 
+    height: 40px; 
+    padding: 2px;
+    margin: 2px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 320px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+.Register:hover
+{
+    background-color: rgb(37, 37, 60);
+    color: white;
+}
+.Register:active
+{
+    opacity: 0.7;
+}
+
+.items4{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Signin
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    color: rgb(37, 37, 60);
+    width: 75px; 
+    height: 40px; 
+    padding: 2px;
+    margin: 2px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 29px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+.Signin:hover
+{
+    background-color: rgb(37, 37, 60);
+    color: white;
+}
+.Signin:active
+{
+    opacity: 0.7;
+}
+
+
+.lowerheader{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.items5{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Home
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 85px; 
+    height: 45px; 
+    padding: 2px;
+    margin: 2px;
+    position: relative;
+    top: 40px;
+    left: 420px;
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Home:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+    text-decoration: none;
+}
+.Home:active
+{
+    opacity: 0.7;
+}
+
+.items6{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Stays
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 85px; 
+    height: 45px; 
+    padding: 2px;
+    margin: 2px;
+    position: relative;
+    top: 40px;
+    left: 195px;
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Stays:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+    text-decoration: none;
+}
+.Stays:active
+{
+    opacity: 0.7;
+}
+
+.items7{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Restaurants
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 120px; 
+    height: 45px; 
+    padding: 2px;
+    margin: 2px;
+    position: relative;
+    top: 40px;
+    left: -30px;
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Restaurants:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Restaurants:active
+{
+    opacity: 0.7;
+}
+
+.items8{
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.Car_Rentals
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 120px; 
+    height: 45px; 
+    padding: 2px;
+    margin: 2px;
+    position: relative;
+    top: 40px;
+    left: -255px;
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Car_Rentals:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Car_Rentals:active
+{
+    opacity: 0.7;
+}

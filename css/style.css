@@ -1,0 +1,7748 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    right: -450px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 950px;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+.header
+{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1000;
+    background-color: rgb(37, 37, 60);
+}
+
+/* logo */
+/* .header_logo
+{
+    background: url("../images/logo.png") no-repeat scroll center;
+    background-size: 250px 50px; */
+    /* margin-top: 20px; */
+    /* margin-left: 10px; */
+    /* width: 248px;
+    height: 60px; */
+    /* margin-right: 30px;
+
+} */
+
+.header
+{
+    padding-bottom: 1%;
+}
+
+.upper_header
+{
+    display: flex;
+    gap: 2%;
+    position: relative;
+    bottom: 0px;
+    margin-left: 17.5%;
+    margin-right: 250px;
+    padding-top: 16px;
+}
+
+
+/* upper header */
+.Upper_header
+{
+    display: flex;
+    gap: 2%;
+    position: relative;
+    bottom: 0px;
+    margin-left: 15.5%;
+    margin-right: 250px;
+    padding-top: 30px;
+}
+
+.header_logo{
+    position: relative;
+    right: 32px;
+    bottom: 10px;
+}
+
+/* Lower header */
+.lower_header
+{
+    
+    display: flex;
+    gap: 4%;
+    margin-left: 16.6%;
+    margin-right: 250px;
+    margin-top: 5px;
+}
+
+.currency
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 55px; 
+    height: 40px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 270px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+
+.currency:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+
+.currency:active
+{
+    opacity: 0.8;
+}
+
+#currencyh2{
+    display: inline-block; 
+    position: relative; 
+    left: 30px; 
+    top: 40px;
+}
+
+#currencyh5{
+    display: inline-block; 
+    position: relative; 
+    top: 60px; 
+    left: 30px;
+}
+
+#currencyh4{
+    display: inline-block; 
+    position: relative; 
+    top: 130px; 
+    right: 750px;
+}
+
+.curr1{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.10s;
+}
+
+.curr1:hover
+{
+background-color: rgb(220, 167, 58);
+color: white;
+}
+
+.curr1:active
+{
+    opacity: 0.8;
+}
+
+.curr2{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 40px; 
+    text-align: left; 
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.10s;
+}
+
+.curr2:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr2:active
+{
+    opacity: 0.8;
+}
+
+.curr3{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 80px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr3:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr3:active
+{
+    opacity: 0.8;
+}
+
+.curr4{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 120px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr4:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr4:active
+{
+    opacity: 0.8;
+}
+
+.curr5{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr5:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr5:active
+{
+    opacity: 0.8;
+}
+
+.curr6{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 40px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr6:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr6:active
+{
+    opacity: 0.8;
+}
+
+.curr7{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 80px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr7:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr7:active
+{
+    opacity: 0.8;
+}
+
+.curr8{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 120px; 
+    text-align: left; 
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr8:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr8:active
+{
+    opacity: 0.8;
+}
+
+#currencyhead{
+    display: inline-block; 
+    position: relative; 
+    top: 220px; 
+    right: 670px;
+}
+
+.curr9{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr9:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr9:active
+{
+    opacity: 0.8;
+}
+
+.lowercont{
+    display: block; 
+    position: absolute; 
+    top: 400px; 
+    left: 30px;
+}
+
+.curr10{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 40px;
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr10:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr10:active
+{
+    opacity: 0.8;
+}
+
+.curr11{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 80px;
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr11:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr11:active
+{
+    opacity: 0.8;
+}
+
+.curr12{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 120px;
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr12:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr12:active
+{
+    opacity: 0.8;
+}
+
+.curr13{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr13:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr14{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 40px;  
+    text-align: left; 
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr14:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr14:active
+{
+    opacity: 0.8;
+}
+
+.curr15{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 80px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr15:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr15:active
+{
+    opacity: 0.8;
+}
+
+.curr16{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 120px;  
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr16:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr16:active
+{
+    opacity: 0.8;
+}
+
+.curr17{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px;  
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr17:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr17:active
+{
+    opacity: 0.8;
+}
+
+.curr18{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 40px;  
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr18:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr18:active
+{
+    opacity: 0.8;
+}
+
+.curr19{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 80px;  
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr19:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr19:active
+{
+    opacity: 0.8;
+}
+
+.curr20{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 120px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr20:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr20:active
+{
+    opacity: 0.8;
+}
+
+.curr21{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr21:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr21:active
+{
+    opacity: 0.8;
+}
+
+.curr22{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 40px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr22:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr22:active
+{
+    opacity: 0.8;
+}
+
+.curr23{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; left: 80px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr23:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr23:active
+{
+    opacity: 0.8;
+}
+
+.curr24{
+    padding: 6px;
+    width: 170px; 
+    height: 50px; 
+    border-radius: 4px; 
+    border-width: 2px; 
+    position: relative; 
+    top: 2px; 
+    left: 120px; 
+    text-align: left; 
+    border: none; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr24:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr24:active
+{
+    opacity: 0.8;
+}
+
+.curr25{
+    padding: 6px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr25:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr25:active
+{
+    opacity: 0.8;
+}
+
+.curr26{
+    padding: 6px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr26:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr26:active
+{
+    opacity: 0.8;
+}
+
+.curr27{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr27:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr27:active
+{
+    opacity: 0.8;
+}
+
+.curr28{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr28:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr28:active
+{
+    opacity: 0.8;
+}
+
+.curr29{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr29:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr29:active
+{
+    opacity: 0.8;
+}
+
+.curr30{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr30:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr30:active
+{
+    opacity: 0.8;
+}
+
+.curr31{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr31:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr31:active
+{
+    opacity: 0.8;
+}
+
+.curr32{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr32:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr32:active
+{
+    opacity: 0.8;
+}
+
+.curr33{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr33:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr33:active
+{
+    opacity: 0.8;
+}
+
+.curr34{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr34:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr34:active
+{
+    opacity: 0.8;
+}
+
+.curr35{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr35:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr35:active
+{
+    opacity: 0.8;
+}
+
+.curr36{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr36:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr36:active
+{
+    opacity: 0.8;
+}
+
+.curr37{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr37:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr37:active
+{
+    opacity: 0.8;
+}
+
+.curr38{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr38:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr38:active
+{
+    opacity: 0.8;
+}
+
+.curr39{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr39:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr39:active
+{
+    opacity: 0.8;
+}
+
+.curr40{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr40:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr40:active
+{
+    opacity: 0.8;
+}
+
+.curr41{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr41:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr41:active
+{
+    opacity: 0.8;
+}
+
+.curr42{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr42:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr42:active
+{
+    opacity: 0.8;
+}
+
+.curr43{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr43:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr43:active
+{
+    opacity: 0.8;
+}
+
+.curr44{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr44:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr44:active
+{
+    opacity: 0.8;
+}
+
+.curr45{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr45:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr45:active
+{
+    opacity: 0.8;
+}
+
+.curr46{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr46:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr46:active
+{
+    opacity: 0.8;
+}
+
+.curr47{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr47:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr47:active
+{
+    opacity: 0.8;
+}
+
+.curr48{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr48:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr48:active
+{
+    opacity: 0.8;
+}
+
+.curr49{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr49:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr49:active
+{
+    opacity: 0.8;
+}
+
+.curr50{
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.30s,
+    background-color 0.30s,
+    color 0.30s;
+}
+
+.curr50:hover
+{
+background-color: rgb(220, 167, 58);
+color: rgb(255, 255, 255);
+}
+
+.curr50:active
+{
+    opacity: 0.8;
+}
+
+
+.language
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 55px; 
+    height: 40px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 270px;
+    /* margin-left: 620%; */
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+
+.language:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+
+.language:active
+{
+    opacity: 0.8;
+}
+
+.register
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    color: rgb(37, 37, 60);
+    width: 95px; 
+    height: 40px; 
+    cursor: pointer;
+    border-radius: 6px;
+    /* margin-left: 370%; */
+    position: relative;
+    left: 300px;
+    background-color: white;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+
+.register:hover
+{
+    background-color: rgb(37, 37, 60);
+    color: white;
+}
+
+.register:active
+{
+    opacity: 0.7;
+}
+
+.sign_in
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    color: rgb(37, 37, 60);
+    width: 75px; 
+    height: 40px; 
+    cursor: pointer;
+    border-radius: 6px;
+    /* margin-left: 470%; */
+    position: relative;
+    left: 300px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+
+.sign_in:hover
+{
+    background-color: rgb(37, 37, 60);
+    color: white;
+}
+
+.sign_in:active
+{
+    opacity: 0.7;
+}
+
+.Stays
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 85px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Stays:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+    text-decoration: none;
+}
+.Stays:active
+{
+    opacity: 0.7;
+}
+
+
+.Restaurants
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 120px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Restaurants:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Restaurants:active
+{
+    opacity: 0.7;
+}
+
+
+.Holiday_Homes
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 140px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Holiday_Homes:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Holiday_Homes:active
+{
+    opacity: 0.7;
+}
+
+
+.Attractions
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 135px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Attractions:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Attractions:active
+{
+    opacity: 0.7;
+}
+
+
+.Car_Rentals
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 120px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Car_Rentals:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Car_Rentals:active
+{
+    opacity: 0.7;
+}
+
+
+.container
+{
+    position: relative;
+    text-align: center;
+    top: 191px;
+}
+
+.container1
+{
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.search-hotels
+{
+    font-size: 75px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    top: 70px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    color: white;
+}
+
+.details
+{
+    color: white;
+    position: absolute;
+    top: 130px;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    display: block;
+}
+
+.container2
+{
+    display: flex;
+    top: 230px;
+    position: absolute;
+    bottom: 300px;
+    left: 10%;
+    gap: 0px;
+    margin-left: 100px;
+    cursor:pointer ;
+}
+
+.location {
+    position: relative;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .background-text {
+    position: absolute;
+    top: 10px;
+    left: 38%;
+    color: gray;
+    font-size: 16px;
+    pointer-events: none; /* Ensure the background text doesn't interfere with input */
+  }
+  
+  /* Style for the text box */
+  .textbox {
+    display: inline-block;
+    position: relative;
+    top: 185px;
+    right: 40px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 295px; 
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+.date {
+    position: relative;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .date-textbox {
+    display: inline-block;
+    position: relative;
+    top: 185px;
+    right: 42px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 200px; 
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+.date-textbox1 {
+    display: inline-block;
+    position: relative;
+    top: 185px;
+    right: 44px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 200px; 
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+.rooms
+{
+    display: inline-block;
+    position: relative;
+    top: 185px;
+    right: 46px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 260px; 
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+}
+.search_bar
+{
+    display: inline-block;
+    position: relative;
+    top: 185px;
+    right: 35px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(220, 167, 58);
+    border-radius: 6px;
+    background-color: rgb(220, 167, 58);
+    color: rgb(255, 255, 255);
+    width: 135px;
+    height: 48px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container3
+{
+    display: inline-block;
+    position: relative;
+    top: 280px;
+    right: 40px;
+}
+
+
+.map
+{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    left: 222px;
+    top: 30px;
+    border:0; 
+    border-radius: 8px;
+}
+
+.leftbar
+{
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #d8d3d3;
+    width: 250px;
+    border-radius: 8px;
+    position: relative;
+    left: 250px;
+    /* top: 25px; */
+    bottom: 2350px;
+    /* margin-right: 40px; */
+}
+
+.place-head{
+    display: inline-block;
+    position: relative;
+    left: 255px;
+    bottom: 120px;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.select-hotel
+{
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+}
+
+.top-hotels
+{
+    border-style: solid;
+    border-color: rgb(54, 98, 184);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 140px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.top-hotels:hover
+{
+    background-color: rgb(54, 98, 184);
+    color: rgb(255, 255, 255);
+}
+.top-hotels:active
+{
+    opacity: 0.7;
+}
+
+.low-price-hotels{
+    border-style: solid;
+    border-color: rgb(54, 98, 184);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 140px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.low-price-hotels:hover
+{
+    background-color: rgb(54, 98, 184);
+    color: rgb(255, 255, 255);
+}
+.low-price-hotels:active
+{
+    opacity: 0.7;
+}
+
+.top-reviewed
+{
+    border-style: solid;
+    border-color: rgb(54, 98, 184);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 140px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.top-reviewed:hover
+{
+    background-color: rgb(54, 98, 184);
+    color: rgb(255, 255, 255);
+}
+.top-reviewed:active
+{
+    opacity: 0.7;
+}
+
+.star-rating-price
+{
+    border-style: solid;
+    border-color: rgb(54, 98, 184);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 140px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.star-rating-price:hover
+{
+    background-color: rgb(54, 98, 184);
+    color: rgb(255, 255, 255);
+}
+.star-rating-price:active
+{
+    opacity: 0.7;
+}
+
+
+.hotel1
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel1:hover{
+    background-color: #ebf1f9;
+}
+
+.Availability1
+{
+    display: inline-block;
+    position: relative;
+    border-radius: 50px;
+    border: 0px;
+    padding: 7px 20px;
+    letter-spacing: 1px;
+    width: 130px;
+    height: 40px;
+    left: 350px;
+    bottom: 45px;
+    background-color: rgb(93 24 220);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+    .Availability1:hover {
+    letter-spacing: 2px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+  }
+  
+  .Availability1:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+
+
+  .Availability2
+  {
+      display: inline-block;
+      position: relative;
+      border-radius: 50px;
+      border: 0px;
+      padding: 5px 20px;
+      letter-spacing: 1px;
+      width: 130px;
+      height: 40px;
+      left: 350px;
+      bottom: 30px;
+      background-color: rgb(93 24 220);
+      color: white;
+      cursor: pointer;
+      transition: all 0.5s ease;
+  }
+      .Availability2:hover {
+      letter-spacing: 2px;
+      background-color: hsl(261deg 80% 48%);
+      color: hsl(0, 0%, 100%);
+      box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+    }
+    
+    .Availability2:active {
+      letter-spacing: 3px;
+      background-color: hsl(261deg 80% 48%);
+      color: hsl(0, 0%, 100%);
+      box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+      transform: translateY(10px);
+      transition: 100ms;
+    }
+
+
+    .Availability3
+    {
+        display: inline-block;
+        position: relative;
+        border-radius: 50px;
+        border: 0px;
+        padding: 5px 20px;
+        letter-spacing: 1px;
+        width: 130px;
+        height: 40px;
+        left: 350px;
+        bottom: 40px;
+        background-color: rgb(93 24 220);
+        color: white;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+        .Availability3:hover {
+        letter-spacing: 2px;
+        background-color: hsl(261deg 80% 48%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+      }
+      
+      .Availability3:active {
+        letter-spacing: 3px;
+        background-color: hsl(261deg 80% 48%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+        transform: translateY(10px);
+        transition: 100ms;
+      }
+
+
+      .Availability4
+      {
+          display: inline-block;
+          position: relative;
+          border-radius: 50px;
+          border: 0px;
+          padding: 5px 20px;
+          letter-spacing: 1px;
+          width: 130px;
+          height: 40px;
+          left: 350px;
+          bottom: 40px;
+          background-color: rgb(93 24 220);
+          color: white;
+          cursor: pointer;
+          transition: all 0.5s ease;
+      }
+          .Availability4:hover {
+          letter-spacing: 2px;
+          background-color: hsl(261deg 80% 48%);
+          color: hsl(0, 0%, 100%);
+          box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+        }
+        
+        .Availability4:active {
+          letter-spacing: 3px;
+          background-color: hsl(261deg 80% 48%);
+          color: hsl(0, 0%, 100%);
+          box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+          transform: translateY(10px);
+          transition: 100ms;
+        }
+
+
+
+.hotel2
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel2:hover{
+    background-color: #ebf1f9;
+}
+
+
+.hotel3
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel3:hover{
+    background-color: #ebf1f9;
+}
+
+.hotel4
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel4:hover{
+    background-color: #ebf1f9;
+}
+
+.hotel5
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel5:hover{
+    background-color: #ebf1f9;
+}
+
+.hotel6
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel6:hover{
+    background-color: #ebf1f9;
+}
+
+.hotel7
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel7:hover{
+    background-color: #ebf1f9;
+}
+
+.hotel8
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel8:hover{
+    background-color: #ebf1f9;
+}
+
+.hotel9
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel9:hover{
+    background-color: #ebf1f9;
+}
+
+.hotel10
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+    transition: 0.10s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.hotel10:hover{
+    background-color: #ebf1f9;
+}
+
+/* .hotel10
+{
+    margin-top: 10px;
+    position: relative;
+    border-style: solid;
+    border-color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 820px; 
+    height: 250px; 
+    cursor: pointer;
+    border-radius: 6px;
+    border-width: 1px;
+    top: 50px;
+} */
+
+/* .container3{
+    display: inline-block;
+    position: relative;
+    top: 20px;
+} */
+
+.container4_1{
+    display: inline-block;
+    position: relative;
+    background-color: #1a1a1a;
+    height: 640px;
+    width: 100%;
+}
+
+#email:focus{
+    outline: none;
+}
+
+.container4{
+    display: inline-block;
+    position: relative;
+    left: 500px;
+}
+
+.col1{
+    color: #1a1a1a;
+}
+
+.col2
+{
+    color: #1a1a1a;
+    display: inline-block;
+    position: relative;
+    left: 120px;
+}
+
+
+input[type=checkbox]
+{
+    width: 21px;
+    height: 21px;
+    position: relative;
+    margin-top: 18px;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #000000;
+}
+
+
+@media(width<1277.60px){
+
+    .header_logo{
+        position: relative;
+        right: 25px;
+    }
+
+    .upper_header{
+        position: relative;
+        right: 25px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 0px;
+        
+    }
+
+
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 0px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 0px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 0px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 0px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 0px;
+        width: 135px;
+    }
+
+    .map{
+        position: relative;
+        left: 220px;
+    }
+
+    .place-head{
+        position: relative;
+        left: 250px;
+    }
+
+    .container3{
+        position: relative;
+        right: 100px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1260px;
+        right: 0px;
+    }
+
+    .rows{
+
+        position: relative;
+        right: 80px;
+    }
+
+    .row2{
+
+        position: relative;
+        right: 80px;
+    }
+
+    .lower_header{
+        position: relative;
+        right: 15px;
+    }
+
+}
+
+
+@media (width<1272px)
+
+{
+
+    .header_logo{
+        position: relative;
+        right: 35px;
+    }
+
+.container3{
+    position: relative;
+    right: 105px;
+}
+
+.Upper_header{
+    position: relative;
+    right: 5px;
+}
+
+    .lower_header
+    {
+        position: relative;
+        right: 20px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -5px;
+    }
+
+    .details{
+        position: absolute;
+        left: -5px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 5px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 5px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 5px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 5px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 5px;
+        width: 135px;
+    }
+
+    .map{
+        display: inline-block;
+        position: relative;
+        left: 220px;
+    }
+
+    /* .select-hotel{
+        display: inline-block;
+        position: relative;
+        left: 425px;
+    } */
+
+    .container3{
+        position: relative;
+        right: 110px;
+    }
+
+    /* .col1{
+        position: relative;
+        right: 5px;
+    }
+
+    .col2{
+        position: relative;
+        right: 5px;
+    }
+
+    .col3{
+        position: relative;
+        right: 5px;
+    }
+
+    .col4{
+        position: relative;
+        right: 5px;
+    } */
+
+    .rows{
+        position: relative;
+        right: 85px;
+    }
+
+    .row2{
+        position: relative;
+        right: 85px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1255px;
+        right: 0px;
+    }
+
+}
+
+
+@media(width<1267px){
+
+    .container3{
+        position: relative;
+        right:115px;
+    }
+
+    .container4_1{
+        width: 1245px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 40px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 10px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 10px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 10px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 10px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 10px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 10px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 25px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -10px;
+    }
+
+    .details{
+        position: absolute;
+        left: -10px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1250px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 90px;
+    }
+
+    .row2{
+        position: relative;
+        right: 90px;
+    }
+
+}
+
+
+@media(width<1262px){
+
+    .container3{
+        position: relative;
+        right: 120px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 45px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 15px;
+    } 
+    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 15px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 15px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 15px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 15px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 15px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 30px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -15px;
+    }
+
+    .details{
+        position: absolute;
+        left: -15px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1245px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 95px;
+    }
+
+    .row2{
+        position: relative;
+        right: 95px;
+    }
+
+}
+
+
+@media(width<1257px){
+
+    .container3{
+        position: relative;
+        right: 125px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 50px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 20px;
+    }
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 20px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 20px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 20px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 20px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 20px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 35px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -20px;
+    }
+
+    .details{
+        position: absolute;
+        left: -20px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1240px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 100px;
+    }
+
+    .row2{
+        position: relative;
+        right: 100px;
+    }
+    
+}
+
+
+@media(width<1252px){
+    
+    .container3{
+        position: relative;
+        right: 130px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 55px;
+    }
+    
+    .Upper_header{
+        position: relative;
+        right: 25px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 25px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 25px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 25px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 25px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 25px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 40px;
+    }
+
+    .currency{
+        display: inline-block;
+        position: relative;
+        right: 20px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -25px;
+    }
+
+    .details{
+        position: absolute;
+        left: -25px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1235px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 105px;
+    }
+
+    .row2{
+        position: relative;
+        right: 105px;
+    }
+
+}
+
+
+@media(width<1247px){
+    
+    .container3{
+        position: relative;
+        right: 135px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 60px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 30px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 30px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 30px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 30px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 30px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 30px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 45px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -30px;
+    }
+
+    .details{
+        position: absolute;
+        left: -30px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1230px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 110px;
+    }
+
+    .row2{
+        position: relative;
+        right: 110px;
+    }
+
+}
+
+
+
+@media(width<1242px){
+    
+    .container3{
+        position: relative;
+        right: 140px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 65px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 35px;
+    }   
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 35px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 35px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 35px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 35px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 35px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 50px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -35px;
+    }
+
+    .details{
+        position: absolute;
+        left: -35px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1225px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 115px;
+    }
+
+    .row2{
+        position: relative;
+        right: 115px;
+    }
+
+}
+
+
+
+@media(width<1237px){
+    
+    .container3{
+        position: relative;
+        right: 145px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 70px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 40px;
+    }   
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 40px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 40px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 40px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 40px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 40px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 55px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -40px;
+    }
+
+    .details{
+        position: absolute;
+        left: -40px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1220px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 120px;
+    }
+
+    .row2{
+        position: relative;
+        right: 120px;
+    }
+
+}
+
+
+
+@media(width<1232px){
+    
+    .container3{
+        position: relative;
+        right: 150px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 75px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 45px;
+    }    
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 45px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 45px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 45px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 45px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 45px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 60px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -45px;
+    }
+
+    .details{
+        position: absolute;
+        left: -45px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1215px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 125px;
+    }
+
+    .row2{
+        position: relative;
+        right: 125px;
+    }
+
+}
+
+
+
+@media(width<1227px){
+    
+    .container3{
+        position: relative;
+        right: 155px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 80px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 50px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 50px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 50px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 50px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 50px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 50px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 65px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -50px;
+    }
+
+    .details{
+        position: absolute;
+        left: -50px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1210px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 130px;
+    }
+
+    .row2{
+        position: relative;
+        right: 130px;
+    }
+
+}
+
+
+
+@media(width<1222px){
+    
+    .container3{
+        position: relative;
+        right: 160px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 85px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 55px;
+    }    
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 55px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 55px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 55px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 55px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 55px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 70px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -55px;
+    }
+
+    .details{
+        position: absolute;
+        left: -55px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1205px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 135px;
+    }
+
+    .row2{
+        position: relative;
+        right: 135px;
+    }
+
+}
+
+
+@media(width<1217px){
+    
+    .container3{
+        position: relative;
+        right: 165px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 90px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 60px;
+    }    
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 60px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 60px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 60px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 60px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 60px;
+        width: 135px;
+    }
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 75px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -60px;
+    }
+
+    .details{
+        position: absolute;
+        left: -60px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1200px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 140px;
+    }
+
+    .row2{
+        position: relative;
+        right: 140px;
+    }
+
+}
+
+
+@media(width<1212px){
+    
+    .container3{
+        position: relative;
+        right: 170px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 95px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 65px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 65px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 65px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 65px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 65px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 65px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 80px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -65px;
+    }
+
+    .details{
+        position: absolute;
+        left: -65px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1195px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 145px;
+    }
+
+    .row2{
+        position: relative;
+        right: 145px;
+    }
+
+}
+
+
+@media(width<1207px){
+    
+    .container3{
+        position: relative;
+        right: 175px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 100px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 70px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 70px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 70px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 70px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 70px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 70px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 85px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -70px;
+    }
+
+    .details{
+        position: absolute;
+        left: -70px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1190px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 150px;
+    }
+
+    .row2{
+        position: relative;
+        right: 150px;
+    }
+
+}
+
+
+@media(width<1202px){
+    
+    .container3{
+        position: relative;
+        right: 180px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 105px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 75px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 75px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 75px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 75px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 75px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 75px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 90px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -75px;
+    }
+
+    .details{
+        position: absolute;
+        left: -75px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1185px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 155px;
+    }
+
+    .row2{
+        position: relative;
+        right: 155px;
+    }
+
+}
+
+
+@media(width<1197px){
+    
+    .container3{
+        position: relative;
+        right: 185px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 110px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 80px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 80px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 80px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 80px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 80px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 80px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 95px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -80px;
+    }
+
+    .details{
+        position: absolute;
+        left: -80px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1180px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 160px;
+    }
+
+    .row2{
+        position: relative;
+        right: 160px;
+    }
+
+}
+
+
+@media(width<1192px){
+    
+    .container3{
+        position: relative;
+        right: 190px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 115px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 85px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 85px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 85px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 85px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 85px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 85px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 100px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -85px;
+    }
+
+    .details{
+        position: absolute;
+        left: -85px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1175px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 165px;
+    }
+
+    .row2{
+        position: relative;
+        right: 165px;
+    }
+
+}
+
+
+@media(width<1187px){
+    
+    .container3{
+        position: relative;
+        right: 195px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 120px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 90px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 90px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 90px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 90px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 90px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 90px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 105px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -90px;
+    }
+
+    .details{
+        position: absolute;
+        left: -90px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1170px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 170px;
+    }
+
+    .row2{
+        position: relative;
+        right: 170px;
+    }
+
+}
+
+
+@media(width<1182px){
+    
+    .container3{
+        position: relative;
+        right: 200px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 125px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 95px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 95px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 95px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 95px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 95px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 95px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 110px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -95px;
+    }
+
+    .details{
+        position: absolute;
+        left: -95px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1165px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 175px;
+    }
+
+    .row2{
+        position: relative;
+        right: 175px;
+    }
+
+}
+
+
+@media(width<1177px){
+    
+    .container3{
+        position: relative;
+        right: 205px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 130px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 100px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 100px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 100px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 100px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 100px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 100px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 115px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -100px;
+    }
+
+    .details{
+        position: absolute;
+        left: -100px;
+    }
+
+    .container4_1{
+        position: relative;
+        width: 1160px;
+        right: 0px;
+    }
+
+    .rows{
+        position: relative;
+        right: 180px;
+    }
+
+    .row2{
+        position: relative;
+        right: 180px;
+    }
+
+}
+
+
+@media(width<1172px){
+    
+    .container3{
+        position: relative;
+        right: 210px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 135px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 105px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 105px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 105px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 105px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 105px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 105px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 120px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -105px;
+    }
+
+    .details{
+        position: absolute;
+        left: -105px;
+    }
+
+    .rows{
+        position: relative;
+        right: 185px;
+    }
+
+    .row2{
+        position: relative;
+        right: 185px;
+    }
+
+}
+
+
+@media(width<1167px){
+    
+    .container3{
+        position: relative;
+        right: 215px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 140px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 110px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 110px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 110px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 110px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 110px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 110px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 125px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -110px;
+    }
+
+    .details{
+        position: absolute;
+        left: -110px;
+    }
+
+    .rows{
+        position: relative;
+        right: 190px;
+    }
+
+    .row2{
+        position: relative;
+        right: 190px;
+    }
+
+}
+
+
+@media(width<1162px){
+    
+    .container3{
+        position: relative;
+        right: 220px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 145px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 115px;
+    }    
+    
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 115px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 115px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 115px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 115px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 115px;
+        width: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 130px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -115px;
+    }
+
+    .details{
+        position: absolute;
+        left: -115px;
+    }
+
+    .rows{
+        position: relative;
+        right: 195px;
+    }
+
+    .row2{
+        position: relative;
+        right: 195px;
+    }
+
+}
+
+
+@media(width<1157px){
+    
+    .container3{
+        position: relative;
+        right: 225px;
+    }
+
+    .map{
+        width: 245px;
+    }
+
+    .leftbar{
+        width: 245px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -120px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 120px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 120px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 120px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 120px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 120px;
+        width: 135px;
+    }
+
+    .details{
+        position: absolute;
+        left: -120px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 5px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 5px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 5px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 5px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 5px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 150px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 120px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 135px;
+    }
+
+    .rows{
+        position: relative;
+        right: 200px;
+    }
+
+    .row2{
+        position: relative;
+        right: 200px;
+    }
+
+}
+
+
+@media(width<1152px){
+
+    .place-head{
+        position: relative;
+        left: 250px;
+    }
+
+    .map{
+        width: 240px;
+    }
+
+    .leftbar{
+        width: 240px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 125px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 125px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 125px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 125px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 125px;
+        width: 135px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -125px;
+    }
+
+    .details{
+        position: absolute;
+        left: -125px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 10px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 10px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 10px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 10px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 10px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 155px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 125px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 140px;
+    }
+
+    .rows{
+        position: relative;
+        right: 205px;
+    }
+
+    .row2{
+        position: relative;
+        right: 205px;
+    }
+
+}
+
+
+@media(width<1147px){
+
+    .place-head{
+        position: relative;
+        left: 250px;
+    }
+
+    .map{
+        width: 235px;
+    }
+
+    .leftbar{
+        width: 235px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 130px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 130px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 130px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 130px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 130px;
+        width: 135px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -130px;
+    }
+
+    .details{
+        position: absolute;
+        left: -130px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 15px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 15px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 15px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 15px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 15px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 160px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 130px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 145px;
+    }
+
+    .rows{
+        position: relative;
+        right: 210px;
+    }
+
+    .row2{
+        position: relative;
+        right: 210px;
+    }
+
+}
+
+
+@media(width<1142px){
+
+    .place-head{
+        position: relative;
+        left: 250px;
+    }
+
+    .map{
+        width: 230px;
+    }
+
+    .leftbar{
+        width: 230px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 135px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 135px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 135px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 135px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 135px;
+        width: 135px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -135px;
+    }
+
+    .details{
+        position: absolute;
+        left: -135px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 20px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 20px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 20px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 20px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 20px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 165px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 135px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 150px;
+    }
+
+    .rows{
+        position: relative;
+        right: 215px;
+    }
+
+    .row2{
+        position: relative;
+        right: 215px;
+    }
+
+}
+
+
+@media(width<1137px){
+
+    .place-head{
+        position: relative;
+        left: 255px;
+    }
+
+    .map{
+        width: 220px;
+    }
+
+    .leftbar{
+        width: 220px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 140px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 140px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 140px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 140px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 140px;
+        width: 135px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -140px;
+    }
+
+    .details{
+        position: absolute;
+        left: -140px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 25px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 25px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 25px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 25px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 25px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 170px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 140px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 155px;
+    }
+
+    .rows{
+        position: relative;
+        right: 220px;
+    }
+
+    .row2{
+        position: relative;
+        right: 220px;
+    }
+
+}
+
+
+@media(width<1132px){
+
+    .place-head{
+        position: relative;
+        left: 260px;
+    }
+
+    .map{
+        width: 210px;
+    }
+
+    .leftbar{
+        width: 210px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 145px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 145px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 145px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 145px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 145px;
+        width: 135px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -145px;
+    }
+
+    .details{
+        position: absolute;
+        left: -145px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 30px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 30px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 30px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 30px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 30px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 175px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 145px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 160px;
+    }
+
+}
+
+
+@media(width<1127px){
+
+    .place-head{
+        position: relative;
+        left: 265px;
+    }
+
+    .map{
+        width: 200px;
+    }
+
+    .leftbar{
+        width: 200px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 150px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 150px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 150px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 150px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 150px;
+        width: 135px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -150px;
+    }
+
+    .details{
+        position: absolute;
+        left: -150px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 35px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 35px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 35px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 35px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 35px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 175px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 145px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 160px;
+    }
+
+}
+
+
+@media(width<1122px){
+
+    .place-head{
+        position: relative;
+        left: 270px;
+    }
+
+    .map{
+        width: 190px;
+    }
+
+    .leftbar{
+        width: 190px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 155px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 155px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 155px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 155px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 155px;
+        width: 135px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -155px;
+    }
+
+    .details{
+        position: absolute;
+        left: -155px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 40px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 40px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 40px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 40px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 40px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 180px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 150px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 165px;
+    }
+
+}
+
+
+@media(width<1117px){
+
+    .place-head{
+        position: relative;
+        left: 270px;
+    }
+
+    .map{
+        width: 185px;
+    }
+
+    .leftbar{
+        width: 185px;
+    }
+
+    .textbox{
+        width: 190px;
+        position: relative;
+        right: 160px;
+    }
+
+    .date-textbox{
+        position: relative;
+        right: 160px;
+        width: 170px;
+    }
+
+    .date-textbox1{
+        position: relative;
+        right: 160px;
+        width: 170px;
+    }
+
+    .rooms{
+        position: relative;
+        right: 160px;
+        width: 170px;
+    }
+
+    .search_bar{
+        position: relative;
+        right: 160px;
+        width: 135px;
+    }
+
+    .search-hotels{
+        position: absolute;
+        left: -160px;
+    }
+
+    .details{
+        position: absolute;
+        left: -160px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 45px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 45px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 45px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 45px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 45px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 185px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 155px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 170px;
+    }
+
+}
+
+
+@media(width<1112px){
+
+    .place-head{
+        position: relative;
+        left: 270px;
+    }
+
+    .map{
+        width: 180px;
+    }
+
+    .leftbar{
+        width: 180px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 50px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 50px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 50px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 50px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 50px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 190px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 160px;
+    }    
+    
+
+    .lower_header
+    {
+        position: relative;
+        right: 175px;
+    }
+
+}
+
+
+@media(width<1107px){
+
+    .place-head{
+        position: relative;
+        left: 265px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 55px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 55px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 55px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 55px;
+    }
+
+    /* .map{
+        width: 180px;
+    }
+
+    .leftbar{
+        width: 180px;
+    } */
+
+    .hotel1{
+        position: relative;
+        right: 55px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 55px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 55px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 55px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 55px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 55px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 55px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 55px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 55px;
+    }
+
+    /* .header_logo{
+        position: relative;
+        right: 180px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 165px;
+    } */
+
+    .Upper_header{
+        position: relative;
+        right: 165px;
+    }    
+
+
+}
+
+
+@media(width<1102px){
+
+    .place-head{
+        position: relative;
+        left: 260px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 60px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 60px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 60px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 60px;
+    }
+
+    /* .map{
+        width: 180px;
+    }
+
+    .leftbar{
+        width: 180px;
+    } */
+
+    .hotel1{
+        position: relative;
+        right: 60px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 60px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 60px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 60px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 60px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 60px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 60px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 60px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 60px;
+    }
+
+    /* .header_logo{
+        position: relative;
+        right: 180px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 165px;
+    } */
+
+    .Upper_header{
+        position: relative;
+        right: 170px;
+    }    
+
+
+}
+
+
+@media(width<1097px){
+
+    .place-head{
+        position: relative;
+        left: 255px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 65px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 65px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 65px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 65px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 65px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 175px;
+    }    
+
+
+}
+
+
+@media(width<1092px){
+
+    .place-head{
+        position: relative;
+        left: 250px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 70px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 70px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 70px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 70px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 70px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 180px;
+    }    
+
+
+}
+
+
+@media(width<1087px){
+
+    .place-head{
+        position: relative;
+        left: 245px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 75px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 75px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 75px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 75px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 75px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 180px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 165px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 185px;
+    }    
+
+
+}
+
+
+@media(width<1082px){
+
+    .place-head{
+        position: relative;
+        left: 240px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 80px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 80px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 80px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 80px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 80px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 175px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 160px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 190px;
+    }    
+
+
+}
+
+
+@media(width<1077px){
+
+    .place-head{
+        position: relative;
+        left: 240px;
+    }
+
+    .map{
+        width: 175px;
+    }
+
+    .leftbar{
+        width: 175px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 85px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 85px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 85px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 85px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 85px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 170px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 155px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 195px;
+    }    
+
+
+}
+
+
+@media(width<1072px){
+
+    .place-head{
+        position: relative;
+        left: 240px;
+    }
+
+    .map{
+        width: 170px;
+    }
+
+    .leftbar{
+        width: 170px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 90px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 90px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 90px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 90px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 90px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 165px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 150px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 200px;
+    }    
+
+
+}
+
+
+@media(width<1067px){
+
+    .place-head{
+        position: relative;
+        left: 240px;
+    }
+
+    .map{
+        width: 165px;
+    }
+
+    .leftbar{
+        width: 165px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 95px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 95px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 95px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 95px;
+    }
+       
+
+    .hotel1{
+        position: relative;
+        right: 95px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 95px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 95px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 95px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 95px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 95px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 95px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 95px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 95px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 160px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 145px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 205px;
+    }    
+
+
+}
+
+
+@media(width<1062px){
+
+    .place-head{
+        position: relative;
+        left: 240px;
+    }
+
+    .map{
+        width: 160px;
+    }
+
+    .leftbar{
+        width: 160px;
+    }
+
+    .top-hotels{
+        position: relative;
+        right: 100px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        right: 100px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        right: 100px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 100px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 100px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 155px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 140px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 210px;
+    }    
+
+
+}
+
+
+@media(width<1057px){
+
+    .place-head{
+        position: relative;
+        left: 245px;
+        bottom: 145px;
+    }
+
+    .map{
+        width: 155px;
+        height: 155px;
+        position: relative;
+        top: -10px;
+    }
+
+    .leftbar{
+        width: 155px;
+        position: relative;
+        bottom: 2410px;
+    }
+
+    .top-hotels{
+        position: relative;
+        bottom: 30px;
+        right: 100px;
+    }
+
+    .low-price-hotels{
+        position: relative;
+        bottom: 30px;
+        right: 100px;
+    }
+
+    .star-rating-price{
+        position: relative;
+        bottom: 30px;
+        right: 100px;
+    }
+
+    .top-reviewed{
+        position: relative;
+        bottom: 30px;
+        right: 100px;
+    }
+
+    .hotel1{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .hotel2{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .hotel3{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .hotel4{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .hotel5{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .hotel6{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .hotel7{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .hotel8{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .hotel9{
+        position: relative;
+        right: 100px;
+        top: 0px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 150px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 135px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 215px;
+    }    
+
+
+}
+
+
+@media(width<1052px){
+
+
+    .hotel1{
+        width: 815px;
+    }
+
+    .hotel2{
+        width: 815px;
+    }
+
+    .hotel3{
+        width: 815px;
+    }
+
+    .hotel4{
+        width: 815px;
+    }
+
+    .hotel5{
+        width: 815px;
+    }
+
+    .hotel6{
+        width: 815px;
+    }
+
+    .hotel7{
+        width: 815px;
+    }
+
+    .hotel8{
+        width: 815px;
+    }
+
+    .hotel9{
+        width: 815px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 145px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 130px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 220px;
+    }    
+
+
+}
+
+
+@media(width<1047px){
+
+
+    .hotel1{
+        width: 810px;
+    }
+
+    .hotel2{
+        width: 810px;
+    }
+
+    .hotel3{
+        width: 810px;
+    }
+
+    .hotel4{
+        width: 810px;
+    }
+
+    .hotel5{
+        width: 810px;
+    }
+
+    .hotel6{
+        width: 810px;
+    }
+
+    .hotel7{
+        width: 810px;
+    }
+
+    .hotel8{
+        width: 810px;
+    }
+
+    .hotel9{
+        width: 810px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 140px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 125px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 225px;
+    }
+
+
+}
+
+
+@media(width<1042px){
+
+
+    .hotel1{
+        width: 805px;
+    }
+
+    .hotel2{
+        width: 805px;
+    }
+
+    .hotel3{
+        width: 805px;
+    }
+
+    .hotel4{
+        width: 805px;
+    }
+
+    .hotel5{
+        width: 805px;
+    }
+
+    .hotel6{
+        width: 805px;
+    }
+
+    .hotel7{
+        width: 805px;
+    }
+
+    .hotel8{
+        width: 805px;
+    }
+
+    .hotel9{
+        width: 805px;
+    }
+
+    .header_logo{
+        position: relative;
+        right: 135px;
+    }
+
+    .lower_header
+    {
+        position: relative;
+        right: 120px;
+    }
+
+    .Upper_header{
+        position: relative;
+        right: 230px;
+    }
+
+
+}
+
+
+@media(width<1037px){
+
+
+    .hotel1{
+        width: 800px;
+    }
+
+    .hotel2{
+        width: 800px;
+    }
+
+    .hotel3{
+        width: 800px;
+    }
+
+    .hotel4{
+        width: 800px;
+    }
+
+    .hotel5{
+        width: 800px;
+    }
+
+    .hotel6{
+        width: 800px;
+    }
+
+    .hotel7{
+        width: 800px;
+    }
+
+    .hotel8{
+        width: 800px;
+    }
+
+    .hotel9{
+        width: 800px;
+    }
+
+
+}
+
+
+@media(width<1032px){
+
+
+    .hotel1{
+        width: 795px;
+    }
+
+    .hotel2{
+        width: 795px;
+    }
+
+    .hotel3{
+        width: 795px;
+    }
+
+    .hotel4{
+        width: 795px;
+    }
+
+    .hotel5{
+        width: 795px;
+    }
+
+    .hotel6{
+        width: 795px;
+    }
+
+    .hotel7{
+        width: 795px;
+    }
+
+    .hotel8{
+        width: 795px;
+    }
+
+    .hotel9{
+        width: 795px;
+    }
+
+
+}
+
+
+@media(width<1032px){
+
+
+    .hotel1{
+        width: 790px;
+    }
+
+    .hotel2{
+        width: 790px;
+    }
+
+    .hotel3{
+        width: 790px;
+    }
+
+    .hotel4{
+        width: 790px;
+    }
+
+    .hotel5{
+        width: 790px;
+    }
+
+    .hotel6{
+        width: 790px;
+    }
+
+    .hotel7{
+        width: 790px;
+    }
+
+    .hotel8{
+        width: 790px;
+    }
+
+    .hotel9{
+        width: 790px;
+    }
+
+
+}
+
+
+@media(width<1241px)
+{
+    .select-hotel
+    {
+        display: inline-block;
+        position: relative;
+        left: 110px;
+    }
+
+    .leftbar
+    {
+        display: inline-block;
+        position: relative;
+        /* bottom: 200px; */
+        /* left: 5px; */
+        right: 779px;
+    }
+}
+
+
+@media (width<=1155.20px) {
+
+    .upper_header{
+       
+        position: relative;
+        right: 22px;   
+    }
+
+        /* .currency
+        {
+            position:relative ;
+            right: 48px;
+        }
+        
+
+        .language
+        {
+            position:relative ;
+            right: 48px;
+            
+        }
+        
+
+        .register
+        {   
+            position:relative ;
+            right: 48px;
+            
+        }
+        
+
+        .sign_in
+        {
+            
+            position:relative ;
+            right: 48px;
+            
+        } */
+
+    /* .lower_header
+    {
+       position: relative;
+       right: 12px; 
+    } */
+}
+
+
+
+
+
+/* @media (width<1000px) {
+
+        .currency
+        {
+            display: inline-block;
+            position:relative ;
+            left: 70px;
+        }
+        
+
+        .language
+        {
+            display: inline-block;
+            position:relative ;
+            left: 70px;
+        }
+        
+
+        .register
+        {   
+            display: inline-block;
+            position:relative ;
+            left: 70px;
+        }
+        
+
+        .sign_in
+        {
+            
+            display: inline-block;
+            position:relative ;
+            left: 70px;
+            
+        }
+
+    .location
+    {
+        display: inline-block;
+        position: relative;
+        left: 0;
+    }
+    .location:first-child
+    {
+        transition: 0.5s;
+    }
+    .textbox
+    {
+        width: 150px;
+    }
+
+    .rooms
+    {
+        position: relative;
+        width: 150px;
+    }
+    .rooms:first-child
+    {
+        transition: 0.5s;
+    }
+    
+
+    .search_bar
+    {
+        position: relative;
+        
+    }
+
+    .map
+    {
+        display: inline-block;
+        position: relative;
+        left: 0;
+    }
+
+    .place-head
+    {
+        display: inline-block;
+        position: relative;
+        left: 5px;
+        bottom: 100px;
+    }
+
+    .top-hotels
+    {
+        display: inline-block;
+        position: relative;
+        left: 200px;
+    }
+    
+    .low-price-hotels{
+        display: inline-block;
+        position: relative;
+        left: 200px;
+    }
+    
+    .top-reviewed
+    {
+        display: inline-block;
+        position: relative;
+        left: 200px;
+    }
+    
+    .star-rating-price
+    {
+        display: inline-block;
+        position: relative;
+        left: 200px;
+    }
+    
+    .hotel1
+    {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        left: 200px;
+        width: 698px;
+        height: 400px;
+    }
+    
+    .hotel2
+    {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        left: 200px;
+        width: 698px;
+        height: 400px;
+    }
+    
+    .hotel3
+    {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        left: 200px;
+        width: 698px;
+        height: 400px;
+    }
+    
+    .hotel4
+    {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        left: 200px;
+        width: 698px;
+        height: 400px;
+    }
+
+    .leftbar
+    {
+        display: inline-block;
+        position: relative;
+        left: 0;
+        bottom: 1670px;
+    }
+
+} */
+
+/* @media (width<980px) {
+
+.hotel1
+{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 200px;
+    width: 670px;
+    height: 400px;
+}
+
+.hotel2
+{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 200px;
+    width: 670px;
+    height: 400px;
+}
+
+.hotel3
+{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 200px;
+    width: 670px;
+    height: 400px;
+}
+
+.hotel4
+{
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 200px;
+    width: 670px;
+    height: 400px;
+}
+
+.leftbar
+{
+    display: inline-block;
+    position: relative;
+    left: 0;
+    bottom: 1670px;
+}
+
+} */
+
+
+@media(width<765px){
+
+
+    .header_logo{
+
+        display: inline-block;
+        position: relative;
+        right: 120px;
+    }
+
+    .currency
+        {
+            display: inline-block;
+            position:relative ;
+            left: -60px;
+        }
+        
+
+        .language
+        {
+            display: inline-block;
+            position:relative ;
+            left: -60px;
+        }
+        
+
+        .register
+        {   
+            display: inline-block;
+            position:relative ;
+            left: -40px;
+        }
+        
+
+        .sign_in
+        {
+            
+            display: inline-block;
+            position:relative ;  
+            left: -40px;          
+        }
+
+        /* .Stays
+    {
+        position: relative;
+        right: 100px;
+    }
+
+    .Restaurants
+    {
+        position: relative;
+        right: 100px;
+
+    }
+   
+    .Holiday_Homes
+    {
+        position: relative;
+        right: 100px;
+
+    }
+   
+    .Attractions
+    {
+        position: relative;
+        right: 100px;
+
+    }
+    
+    .Car_Rentals
+    {
+        position: relative;
+        right: 100px;
+    } */
+
+    .search-hotels
+    {
+        left: -130px;
+    }
+
+    .location
+    {
+        position: relative;
+        left: -130px;
+    }
+
+    .date
+    {
+        position: relative;
+        left: -130px;
+
+    }
+ 
+    .rooms
+    {
+        position: relative;
+        left: -130px;
+
+    }
+    
+    .search_bar
+    {
+        position: relative;
+        left: -130px;
+
+    }
+
+}
+
+
+
+/* @media (width<500px) {
+
+    .header_logo
+    {
+        position: relative;
+        right: 75px;
+        bottom: 40px;
+    }
+
+    .upper_header{
+        display:flow-root ;
+    }
+        .currency{
+            margin-bottom: 10px;
+            position:relative ;
+            right: 48px;
+            bottom: 30px;
+        }
+        .currency:first-child
+        {
+            transition: 0.5s;
+        }
+
+        .language
+        {
+            margin-bottom: 10px;
+            position:relative ;
+            right: 48px;
+            bottom: 35px;
+        }
+        .language:first-child
+        {
+            transition: 0.5s;
+        }
+
+        .register{
+            margin-bottom: 10px;
+            position:relative ;
+            right: 48px;
+            bottom: 28px;
+        }
+        .register:first-child
+        {
+            transition: 0.5s;
+        }
+
+        .sign_in
+        {
+            margin-bottom: 50px;
+            position:relative ;
+            right: 48px;
+            bottom: 26px;
+        }
+        .sign_in:first-child
+        {
+            transition: 0.5s;
+        }
+
+
+    .lower_header
+    {
+        display:contents ;
+    }
+
+    .Stays
+    {
+        position: relative;
+        left: 7%;
+        bottom:36px;
+    }
+    .Stays:first-child
+    {
+        transition: 0.5s;
+    }
+
+    .Restaurants
+    {
+        position: relative;
+        left: 7%;
+        bottom: 28px;
+    }
+    .Restaurants:first-child
+    {
+        transition: 0.5s;
+    }
+
+    .Holiday_Homes
+    {
+        position: relative;
+        left: 7%;
+        bottom: 20px;
+    }
+    .Holiday_Homes:first-child
+    {
+        transition: 0.5s;
+    }
+
+    .Attractions
+    {
+        position: relative;
+        left: 7%;
+        bottom: 12px;
+    }
+    .Attractions:first-child
+    {
+        transition: 0.5s;
+    }
+
+    .Car_Rentals
+    {
+        position: relative;
+        left: 7%;
+        bottom: 4px;
+    }
+    .Car_Rentals:first-child
+    {
+        transition: 0.5s;
+    }
+    
+
+    .details
+    {
+        position: relative;
+        right: 22%;
+    }
+
+    .location
+    {
+        position: relative;
+        right: 10.1%;
+    }
+    .location:first-child
+    {
+        transition: 0.5s;
+    }
+
+    .date
+    {
+        position: relative;
+        right: 48.3%;
+        top: 200%;
+    }
+    .date:first-child
+    {
+        transition: 0.5s;
+    }
+
+    .rooms
+    {
+        position: relative;
+        top: 400%;
+        right: 297.2%;
+    }
+    .rooms:first-child
+    {
+        transition: 0.5s;
+    }
+    
+
+    .search_bar
+    {
+        position: relative;
+        top: 600%;
+        right: 759%;
+    }
+
+    .container3
+    {
+        position: relative;
+        right: 7%;
+    }
+} */

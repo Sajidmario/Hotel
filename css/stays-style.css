@@ -1,0 +1,1352 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1262px;
+}
+
+.py-5-bg-light{
+    max-width: 1700px;
+}
+
+.section{
+    max-width: 1700px;
+}
+
+.header
+{
+    display: inline-block;
+}
+
+/* .header
+{
+    padding-bottom: 1%;
+} */
+
+.upper_header{
+    position: relative;
+    right: 160px;
+}
+
+.logo-svg
+{
+    background: none;
+    display: inline-block;
+    position: relative;
+    left: 3.5%;
+    
+    bottom: 450px;
+}
+
+.lower_header
+{
+    
+    display: flex;
+    gap: 4%;
+    position: relative;
+    left: 290px;
+
+}
+
+.currency
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 62px; 
+    height: 40px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 34%;
+    bottom: 480px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+
+.currency:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+
+.currency:active
+{
+    opacity: 0.8;
+}
+
+.language
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 55px; 
+    height: 40px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 34%;
+    bottom: 480px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+
+.language:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+
+.language:active
+{
+    opacity: 0.8;
+}
+
+.register
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    color: rgb(37, 37, 60);
+    width: 95px; 
+    height: 40px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 35%;
+    bottom: 480px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+
+.register:hover
+{
+    background-color: rgb(37, 37, 60);
+    color: white;
+}
+
+.register:active
+{
+    opacity: 0.7;
+}
+
+.sign_in
+{
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    color: rgb(37, 37, 60);
+    width: 80px; 
+    height: 40px; 
+    cursor: pointer;
+    border-radius: 6px;
+    position: relative;
+    left: 35%;
+    bottom: 480px;
+    transition: opacity 0.30s,
+        background-color 0.30s,
+        color 0.30s;
+}
+
+.sign_in:hover
+{
+    background-color: rgb(37, 37, 60);
+    color: white;
+}
+
+.sign_in:active
+{
+    opacity: 0.7;
+}
+
+.Stays
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 85px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    display: inline-block;
+    position: relative;
+    right: 34%;
+    bottom: 400px;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Stays:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Stays:active
+{
+    opacity: 0.7;
+}
+
+
+.Restaurants
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 120px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    display: inline-block;
+    position: relative;
+    bottom: 400px;
+    right: 32%;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Restaurants:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Restaurants:active
+{
+    opacity: 0.7;
+}
+
+
+.Holiday_Homes
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 140px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    display: inline-block;
+    position: relative;
+    bottom: 400px;
+    right: 30%;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Holiday_Homes:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Holiday_Homes:active
+{
+    opacity: 0.7;
+}
+
+
+.Attractions
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 135px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    display: inline-block;
+    position: relative;
+    bottom: 400px;
+    right: 28%;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Attractions:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Attractions:active
+{
+    opacity: 0.7;
+}
+
+
+.Car_Rentals
+{
+    border-style: solid;
+    border-color: white;
+    background-color: rgb(37, 37, 60);
+    color: white;
+    width: 120px; 
+    height: 45px; 
+    cursor: pointer;
+    border-radius: 22px;
+    display: inline-block;
+    position: relative;
+    bottom: 400px;
+    right: 26%;
+    transition: 0.15s,
+    background-color 0.30s,
+        color 0.30s;
+}
+.Car_Rentals:hover
+{
+    background-color: white;
+    color: rgb(37, 37, 60);
+}
+.Car_Rentals:active
+{
+    opacity: 0.7;
+}
+
+
+.container
+{
+    position: relative;
+    text-align: center;
+}
+
+.para{
+    color: white;
+    display: inline-block;
+    position: relative;
+    bottom: 300px;
+    left: 203px;
+    font-size: 50px;
+}
+
+
+.para1{
+    color: white;
+    display: inline-block;
+    position: relative;
+    bottom: 270px;
+    /* left: 50px; */
+    right: 188px;
+    font-size: 20px;
+}
+
+.location {
+    position: relative;
+    display: inline-block;
+    right: 620px;
+    bottom: 45px;
+}
+  .background-text {
+    position: absolute;
+    top: 10px;
+    left: 38%;
+    color: gray;
+    font-size: 16px;
+    pointer-events: none;
+  }
+  
+ 
+  .textbox {
+    display: inline-block;
+    position: relative;
+    bottom: 171px;
+    /* left: 6%; */
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 320px; 
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.date {
+    display: inline-block;
+    position: relative;
+    left: 106px;
+    bottom: 93px;
+}
+  
+  .date-textbox {
+    display: inline-block;
+    position: relative;
+    bottom:171px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 150px; 
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .date-textbox1{
+    display: inline-block;
+    position: relative;
+    bottom: 171px;
+    right: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 150px; 
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+.rooms
+{
+    display: inline-block;
+    position: relative;
+    bottom: 312px;
+    left: 380px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 250px; 
+    height: 44.9px;
+    cursor: pointer;
+    text-align: center; 
+}
+.search_bar
+{
+    display: inline-block;
+    position: relative;
+    bottom: 361px;
+    left: 573px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 135px;
+    height: 49px;
+    cursor: pointer;
+    text-align: center;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+    background-attachment: scroll;
+background-clip: border-box;
+background-color: rgb(242, 244, 251);
+background-image: none;
+background-origin: padding-box;
+background-position-x: 0%;
+background-position-y: 0%;
+background-repeat: repeat;
+background-size: 100%;
+box-sizing: border-box;
+color: rgb(108, 117, 125);
+display: block;
+font-family: Roboto, arial, sans-serif;
+font-size: 16px;
+font-weight: 200;
+height: 522.275px;
+line-height: 28.8px;
+padding-bottom: 48px;
+padding-top: 48px;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+width: 1050.4px;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.py-5-bg-light
+{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    bottom: 133px;
+}
+
+
+
+.row-align-items-center{
+    display: block;
+    unicode-bidi: isolate;
+    align-items: center;
+box-sizing: border-box;
+color: rgb(108, 117, 125);
+display: flex;
+position: relative;
+left: 19%;
+flex-wrap: wrap;
+font-family: Roboto, arial, sans-serif;
+font-size: 16px;
+font-weight: 200;
+height: 426.275px;
+line-height: 28.8px;
+margin-left: -15px;
+margin-right: -15px;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+width: 960px;
+-webkit-box-align: center;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.col-md-12-col-lg-7-ml-auto-order-lg-2-position-relative-mb-5-aos-init-aos-animate
+{
+    box-sizing: border-box;
+color: rgb(108, 117, 125);
+display: block;
+flex-basis: 58.3333%;
+flex-grow: 0;
+flex-shrink: 0;
+font-family: Roboto, arial, sans-serif;
+font-size: 16px;
+font-weight: 200;
+height: 378.275px;
+line-height: 28.8px;
+margin-bottom: 48px;
+margin-left: 80.025px;
+max-width: 58.3333%;
+min-height: 1px;
+opacity: 1;
+order: 2;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+text-align: left;
+text-size-adjust: 100%;
+transform: matrix(1, 0, 0, 1, 0, 0);
+transition-duration: 1s;
+transition-property: opacity, transform;
+transition-timing-function: ease;
+unicode-bidi: isolate;
+width: 559.987px;
+-webkit-box-flex: 0;
+-webkit-box-ordinal-group: 3;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.img-absolute{
+
+    bottom: -100px;
+box-sizing: border-box;
+color: rgb(108, 117, 125);
+display: block;
+font-family: Roboto, arial, sans-serif;
+font-size: 16px;
+font-weight: 200;
+height: 250px;
+line-height: 28.8px;
+margin-block-end: 16px;
+margin-block-start: 0px;
+margin-bottom: 16px;
+margin-inline-end: 0px;
+margin-inline-start: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+position: absolute;
+right: -100px;
+text-align: left;
+text-size-adjust: 100%;
+unicode-bidi: isolate;
+width: 250px;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.col-md-12-col-lg-4-order-lg-1-aos-init-aos-animate
+{
+    box-sizing: border-box;
+color: rgb(108, 117, 125);
+display: block;
+flex-basis: 33.3333%;
+flex-grow: 0;
+flex-shrink: 0;
+font-family: Roboto, arial, sans-serif;
+font-size: 16px;
+font-weight: 200;
+position: relative;
+top: 50px;
+left: 10px;
+height: 334.4px;
+line-height: 28.8px;
+max-width: 33.3333%;
+min-height: 1px;
+opacity: 1;
+order: 1;
+padding-left: 15px;
+padding-right: 15px;
+position: relative;
+text-align: left;
+text-size-adjust: 100%;
+transform: matrix(1, 0, 0, 1, 0, 0);
+transition-duration: 1s;
+transition-property: opacity, transform;
+transition-timing-function: ease;
+unicode-bidi: isolate;
+width: 319.987px;
+-webkit-box-flex: 0;
+-webkit-box-ordinal-group: 2;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.img-fluid-rounded{
+
+
+    border-bottom-color: rgb(242, 244, 251);
+border-bottom-left-radius: 50%;
+border-bottom-right-radius: 50%;
+border-bottom-style: solid;
+border-bottom-width: 9.6px;
+border-image-outset: 0;
+border-image-repeat: stretch;
+border-image-slice:100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(242, 244, 251);
+border-left-style: solid;
+border-left-width: 9.6px;
+border-right-color: rgb(242, 244, 251);
+border-right-style: solid;
+border-right-width: 9.6px;
+border-top-color: rgb(242, 244, 251);
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+border-top-style: solid;
+border-top-width: 9.6px;
+box-sizing: border-box;
+color: rgb(108, 117, 125);
+display: inline;
+font-family: Roboto, arial, sans-serif;
+font-size: 16px;
+font-weight: 200;
+height: 250px;
+line-height: 28.8px;
+max-width: 250px;
+position: relative;
+left: 50px;
+top: 50px;
+overflow-clip-margin: content-box;
+overflow-x: clip;
+overflow-y: clip;
+text-align: left;
+text-size-adjust: 100%;
+vertical-align: middle;
+width: 250px;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.img-fluid{
+
+    width: 120%;
+}
+
+
+.container4_1{
+    display: inline-block;
+    position: relative;
+    background-color: #1a1a1a;
+    top: 800px;
+    height: 640px;
+    width: 100%;
+}
+
+.container4{
+    display: inline-block;
+    position: relative;
+    left: 500px;
+}
+
+.col1{
+    color: #1a1a1a;
+}
+
+.col2
+{
+    color: #1a1a1a;
+    display: inline-block;
+    position: relative;
+    left: 120px;
+}
+
+
+input[type=checkbox]
+{
+    width: 21px;
+    height: 21px;
+    position: relative;
+    margin-top: 18px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+@media(width<1277.60px){
+
+    .currency{
+        position: relative;
+        left: 50px;
+        bottom: 480px;
+    }
+
+    .sign_in{
+        position: relative;
+        left: -50px;
+    }
+
+    .logo-svg{
+        position: relative;
+        right: 100px;
+        bottom: 450px;
+    }
+
+    .lower_header{
+
+        position: relative;
+        left: 790px;
+    }
+
+    .textbox{
+        position: relative;
+        left: 200px;
+        bottom: 170px;
+    }
+
+    .date{
+        position: relative;
+        bottom: 150px;
+        right: 125px;
+    }
+
+    .date1{
+        position: relative;
+        top: -171px;
+        left: 119px;
+    }
+
+    .rooms{
+        display: inline-block;
+        position: relative;
+        right: 400px;
+        bottom: -200px;
+    }
+
+    .search{
+        position: relative;
+        bottom: 48px;
+        right: 200px;
+    }
+}
+
+
+@media(width < 984px){
+
+
+    .currency{
+        display: inline-block;
+        position: relative;
+        left: 250px;
+        bottom: 570px;
+    }
+
+    .language{
+        display: inline-block;
+        position: relative;
+        left: 250px;
+        bottom: 570px;
+    }
+
+    .register{
+        display: inline-block;
+        position: relative;
+        left: 270px;
+        bottom: 570px;
+    }
+
+    .sign_in{
+        display: inline-block;
+        position: relative;
+        left: 270px;
+        bottom: 570px;
+    }
+
+    .Stays{
+        display: inline-block;
+        position: relative;
+        right: 533px;
+    }
+
+    .Restaurants{
+        display: inline-block;
+        position: relative;
+        right: 500px;
+    }
+
+    .Holiday_Homes{
+        display: inline-block;
+        position: relative;
+        left: 380px;
+        bottom: 525px;
+    }
+
+    .Attractions{
+        display: inline-block;
+        position: relative;
+        left: 410px;
+        bottom: 525px;
+    }
+
+    .Car_Rentals{
+        display: inline-block;
+        position: relative;
+        left: 445px;
+        bottom: 525px;
+    }
+
+    .location{
+        display: inline-block;
+        position: relative;
+        right: 324px;
+    }
+
+    .textbox{
+        width: 225px;
+    }
+
+    .date-textbox{
+        display: inline-block;
+        position: relative;
+        right: 470.3px;
+        width: 200px;
+    }
+
+    .rooms{
+        display: inline-block;
+        position: relative;
+        left: 290px;
+        bottom: 192px;
+        width: 200px;
+    }
+
+    .search_bar{
+        display: inline-block;
+        position: relative;
+        left: 286px;
+        bottom: 192px;
+    }
+}
+
+@media(width < 941px){
+
+    .date-textbox{
+        display: inline-block;
+        position: relative;
+        right: 464px;
+    }
+
+    .currency{
+        display: inline-block;
+        position: relative;
+        left: 240px;
+        bottom: 570px;
+    }
+
+    .language{
+        display: inline-block;
+        position: relative;
+        left: 240px;
+        bottom: 570px;
+    }
+
+    .register{
+        display: inline-block;
+        position: relative;
+        left: 260px;
+        bottom: 570px;
+    }
+
+    .sign_in{
+        display: inline-block;
+        position: relative;
+        left: 260px;
+        bottom: 570px;
+    }
+
+}
+
+@media(width < 925px){
+
+    .currency{
+        display: inline-block;
+        position: relative;
+        left: 230px;
+        bottom: 570px;
+    }
+
+    .language{
+        display: inline-block;
+        position: relative;
+        left: 230px;
+        bottom: 570px;
+    }
+
+    .register{
+        display: inline-block;
+        position: relative;
+        left: 250px;
+        bottom: 570px;
+    }
+
+    .sign_in{
+        display: inline-block;
+        position: relative;
+        left: 250px;
+        bottom: 570px;
+    }
+
+    .location{
+        display: inline-block;
+        position: relative;
+        right: 328px;
+    }
+
+    .textbox{
+        width: 210px;
+    }
+
+    .date-textbox{
+        display: inline-block;
+        position: relative;
+        right: 468px;
+        width: 200px;
+    }
+
+    .rooms{
+        display: inline-block;
+        position: relative;
+        left: 276px;
+        bottom: 192px;
+        width: 200px;
+    }
+
+    .search_bar{
+        display: inline-block;
+        position: relative;
+        left: 270px;
+        bottom: 192px;
+    }
+}
+
+@media(width < 900px){
+
+    .Restaurants{
+        display: inline-block;
+        position: relative;
+        right: 495px;
+    }
+
+    .Holiday_Homes{
+        display: inline-block;
+        position: relative;
+        left: 374px;
+    }
+
+    .currency{
+        display: inline-block;
+        position: relative;
+        left: 220px;
+        bottom: 570px;
+    }
+
+    .language{
+        display: inline-block;
+        position: relative;
+        left: 220px;
+        bottom: 570px;
+    }
+
+    .register{
+        display: inline-block;
+        position: relative;
+        left: 240px;
+        bottom: 570px;
+    }
+
+    .sign_in{
+        display: inline-block;
+        position: relative;
+        left: 240px;
+        bottom: 570px;
+    }
+
+    .location{
+        display: inline-block;
+        position: relative;
+        right: 333px;
+    }
+
+    .textbox{
+        width: 200px;
+    }
+
+    .date-textbox{
+        display: inline-block;
+        position: relative;
+        right: 469px;
+        width: 200px;
+    }
+
+    .rooms{
+        display: inline-block;
+        position: relative;
+        left: 264px;
+        bottom: 192px;
+        width: 200px;
+    }
+
+    .search_bar{
+        display: inline-block;
+        position: relative;
+        left: 259px;
+        bottom: 192px;
+    }
+}
+
+@media(width < 855px){
+
+    .currency{
+        display: inline-block;
+        position: relative;
+        left: 195px;
+        bottom: 570px;
+    }
+
+    .language{
+        display: inline-block;
+        position: relative;
+        left: 195px;
+        bottom: 570px;
+    }
+
+    .register{
+        display: inline-block;
+        position: relative;
+        left: 215px;
+        bottom: 570px;
+    }
+
+    .sign_in{
+        display: inline-block;
+        position: relative;
+        left: 215px;
+        bottom: 570px;
+    }
+
+    .Stays{
+        display: inline-block;
+        position: relative;
+        right: 537px;
+    }
+
+    .Restaurants{
+        display: inline-block;
+        position: relative;
+        right: 508px;
+    }
+
+    .Holiday_Homes{
+        display: inline-block;
+        position: relative;
+        left: 355px;
+        bottom: 525px;
+    }
+
+    .Attractions{
+        display: inline-block;
+        position: relative;
+        left: 385px;
+        bottom: 525px;
+    }
+
+    .Car_Rentals{
+        display: inline-block;
+        position: relative;
+        left: 415px;
+        bottom: 525px;
+    }
+
+    .location{
+        display: inline-block;
+        position: relative;
+        right: 340px;
+    }
+
+    .textbox{
+        width: 202px;
+    }
+
+    .date-textbox{
+        display: inline-block;
+        position: relative;
+        right: 467.8px;
+        bottom: 145px;
+        width: 192px;
+    }
+
+    .rooms{
+        display: inline-block;
+        position: relative;
+        left: 252px;
+        bottom: 192px;
+        width: 190px;
+    }
+
+    .search_bar{
+        display: inline-block;
+        position: relative;
+        left: 246.6px;
+        bottom: 192px;
+    }
+}
+
+@media(width < 845px){
+
+    .currency{
+        display: inline-block;
+        position: relative;
+        left: 185px;
+        bottom: 570px;
+    }
+
+    .language{
+        display: inline-block;
+        position: relative;
+        left: 185px;
+        bottom: 570px;
+    }
+
+    .register{
+        display: inline-block;
+        position: relative;
+        left: 210px;
+        bottom: 570px;
+    }
+
+    .sign_in{
+        display: inline-block;
+        position: relative;
+        left: 210px;
+        bottom: 570px;
+    }
+
+    .Stays{
+        display: inline-block;
+        position: relative;
+        right: 538px;
+    }
+
+    .Restaurants{
+        display: inline-block;
+        position: relative;
+        right: 518px;
+    }
+
+    .Holiday_Homes{
+        display: inline-block;
+        position: relative;
+        left: 330px;
+        bottom: 525px;
+    }
+
+    .Attractions{
+        display: inline-block;
+        position: relative;
+        left: 350px;
+        bottom: 525px;
+    }
+
+    .Car_Rentals{
+        display: inline-block;
+        position: relative;
+        left: 370px;
+        bottom: 525px;
+    }
+
+    .location{
+        display: inline-block;
+        position: relative;
+        right: 343px;
+    }
+
+    .textbox{
+        width: 195px;
+    }
+
+    .date-textbox{
+        display: inline-block;
+        position: relative;
+        right: 470px;
+        width: 195px;
+    }
+
+    .rooms{
+        display: inline-block;
+        position: relative;
+        left: 239px;
+        bottom: 192px;
+        width: 195px;
+    }
+
+    .search_bar{
+        display: inline-block;
+        position: relative;
+        left: 234px;
+        bottom: 192px;
+        width: 115px;
+    }
+}
+
+@media(width<1278px)
+{
+
+
+    .currency{
+        display: inline-block;
+        position: relative;
+        left: 250px;
+    }
+
+    .language{
+        display: inline-block;
+        position: relative;
+        left: 250px;
+    }
+
+    .register{
+        display: inline-block;
+        position: relative;
+        left: 270px;
+    }
+
+    .sign_in{
+        display: inline-block;
+        position: relative;
+        left: 270px;
+    }
+
+    .Stays{
+        display: inline-block;
+        position: relative;
+        right: 533px;
+    }
+
+    .Restaurants{
+        display: inline-block;
+        position: relative;
+        right: 500px;
+    }
+
+    .Holiday_Homes{
+        display: inline-block;
+        position: relative;
+        right: 470px;
+    }
+
+    .Attractions{
+        display: inline-block;
+        position: relative;
+        right: 440px;
+    }
+
+    .Car_Rentals{
+        display: inline-block;
+        position: relative;
+        right: 405px;
+    }
+
+    .location{
+        display: inline-block;
+        position: relative;
+        right: 830px;
+    }
+
+    .textbox{
+        width: 225px;
+    }
+
+    .date-textbox{
+        display: inline-block;
+        position: relative;
+        right: -796px;
+        bottom: 312px;
+        width: 200px;
+    }
+
+    .date-textbox1
+    {
+        display: inline-block;
+        position: relative;
+        right: -794px;
+        bottom: 312px;
+        width: 200px;
+    }
+
+    .rooms{
+        display: inline-block;
+        position: relative;
+        left: -340px;
+        bottom: 312px;
+        width: 200px;
+    }
+
+    .search_bar{
+        display: inline-block;
+        position: relative;
+        left: 80px;
+        bottom: 312px;
+    }
+}
+
+@media(width=1261.60px){
+
+
+    .location{
+        right: 880px;
+    }
+
+    .rooms{
+        left: -330px;
+    }
+
+    .date-textbox{
+        left: 798px;
+    }
+
+}

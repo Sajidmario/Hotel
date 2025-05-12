@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check-in and Check-out Calendar</title>
+<style>
+  .calendar {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .calendar input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .calendar th, .calendar td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  .calendar th {
+    background-color: #f2f2f2;
+  }
+  .calendar td:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  .selected {
+    background-color: #ccc;
+  }
+</style>
+</head>
+<body>
+
+<div class="calendar">
+  <input type="text" id="dateRange" placeholder="Select Date Range">
+  <table id="calendar">
+    <thead>
+      <tr>
+        <th>Sun</th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script>
+  let startDate = null;
+  let endDate = null;
+  let selectingEndDate = false;
+
+  function createCalendar(year, month) {
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const currentMonth = today.getMonth();
+    const currentDate = today.getDate();
+
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const firstDayOfMonth = new Date(year, month, 1).getDay();
+
+    const tbody = document.querySelector("#calendar tbody");
+    tbody.innerHTML = "";
+
+    let date = 1;
+    for (let i = 0; i < 6; i++) {
+      const row = document.createElement("tr");
+      for (let j = 0; j < 7; j++) {
+        const cell = document.createElement("td");
+        if (i === 0 && j < firstDayOfMonth) {
+          // Empty cells before the first day of the month
+          cell.textContent = "";
+        } else if (date > daysInMonth) {
+          // Empty cells after the last day of the month
+          cell.textContent = "";
+        } else {
+          cell.textContent = date;
+          cell.addEventListener("click", function() {
+            const selectedDate = new Date(year, month, date);
+            if (selectingEndDate) {
+              endDate = selectedDate;
+              selectingEndDate = false;
+              updateInputField();
+            } else {
+              startDate = selectedDate;
+              selectingEndDate = true;
+              updateInputField();
+            }
+          });
+          if (startDate && endDate && selectedDate >= startDate && selectedDate <= endDate) {
+            cell.classList.add("selected");
+          }
+          if (date === currentDate && year === currentYear && month === currentMonth) {
+            cell.classList.add("today");
+          }
+          date++;
+        }
+        row.appendChild(cell);
+      }
+      tbody.appendChild(row);
+    }
+  }
+
+  function updateInputField() {
+    if (startDate && endDate) {
+      document.getElementById("dateRange").value = `${startDate.toDateString()} - ${endDate.toDateString()}`;
+    } else if (startDate) {
+      document.getElementById("dateRange").value = `${startDate.toDateString()} - (Select check-out date)`;
+    } else {
+      document.getElementById("dateRange").value = "(Select check-in date) - (Select check-out date)";
+    }
+  }
+
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = today.getMonth();
+  createCalendar(year, month);
+</script>
+
+</body>
+</html>
